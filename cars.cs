@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace ConsoleApp1
@@ -17,64 +17,45 @@ namespace ConsoleApp1
 
         }
 
-        public void SetLabel(string label)
+        public string Label
         {
-            this.label = label;
+            get { return label; }
+            set { label = value; }
         }
-        public void SetPower(int power)
+        public int Power
         {
-            this.power = power;
+            get { return power; }
+            set { power = value; }
         }
-        public void SetYear(int year_of_production)
+        public int Year_of_production
         {
-            this.year_of_production = year_of_production;
-        }
-        public string GetLabel()
-        {
-            return label;
-        }
-        public int GetPower()
-        {
-            return power;
-        }
-        public int GetYear()
-        {
-            return year_of_production;
+            get { return year_of_production; }
+            set { year_of_production = value; }
         }
     }
-    public class PassengerCar : Car 
+    public class PassengerCar : Car
     {
         private int passengers_сount;
         private Dictionary<int, string> repair_book;
 
         public PassengerCar(string label, int power, int year_of_production, int passengers_сount) : base(label, power, year_of_production)
         {
-            this.label = label;
-            this.power = power;
-            this.year_of_production = year_of_production;
             this.passengers_сount = passengers_сount;
             repair_book = new Dictionary<int, string>();
         }
 
 
-        public void SetPassengersCount(int passengers_сount)
+        public int Passengers_сount
         {
-            this.passengers_сount = passengers_сount;
+            get { return passengers_сount; }
+            set { passengers_сount = value; }
         }
 
-        public void SetRepairBook(Dictionary<int, string> repair_book)
+        public Dictionary<int, string> Repair_book
         {
-            this.repair_book = repair_book;
-        }
+            get { return repair_book; }
+            set { repair_book = value; }
 
-        public int GetPassengersCount()
-        {
-            return passengers_сount;
-        }
-
-        public Dictionary<int, string> GetRepairBook()
-        {
-            return repair_book;
         }
 
         public void AddRepairInfo(int repair_year, string sparepart_repair)
@@ -111,8 +92,8 @@ namespace ConsoleApp1
 
         public override string ToString()
         {
-            return $"Марка автомобиля: {label}" + '\n' + $"Мощность автомобиля: {power}" +
-                '\n' + $"Год производства автомобиля: {year_of_production}" + '\n' + $"Вместимость автомобиля: {passengers_сount} + '\n'";
+            return $"Марка автомобиля: {label}" + '\n' + $"Мощность автомобиля: {power}" + '\n' + 
+                $"Год производства автомобиля: {year_of_production}" + '\n' + $"Вместимость автомобиля: {passengers_сount} + '\n'";
         }
 
     }
@@ -127,42 +108,27 @@ namespace ConsoleApp1
         public Truck(string label, int power, int year_of_production, int max_lifting_capacity, string drivers_name, string current_cargo)
             : base(label, power, year_of_production)
         {
-            this.label = label;
-            this.power = power;
-            this.year_of_production = year_of_production;
             this.max_lifting_capacity = max_lifting_capacity;
             this.drivers_name = drivers_name;
             this.current_cargo = current_cargo;
         }
 
-        public int GetMaxLiftingCapacity()
+        public int Max_lifting_capacity
         {
-            return max_lifting_capacity;
+            get { return max_lifting_capacity; }
+            set { max_lifting_capacity = value; }
         }
 
-        public string GetDriversName()
+        public string Drivers_name
         {
-            return drivers_name;
+            get { return drivers_name; }
+            set { drivers_name = value; }
         }
 
-        public string GetCurrentCargo()
+        public string Current_cargo
         {
-            return current_cargo;
-        }
-
-        public void SetMaxLiftingCapacity(int max_lifting_capacity)
-        {
-            this.max_lifting_capacity = max_lifting_capacity;
-        }
-
-        public void SetDriversName(string drivers_name)
-        {
-            this.drivers_name = drivers_name;
-        }
-
-        public void SetCurrentCargo(string current_cargo)
-        {
-            this.current_cargo = current_cargo;
+            get { return current_cargo; }
+            set { current_cargo = value; }
         }
 
         public void RemoveCurrentCargo()
@@ -197,34 +163,22 @@ namespace ConsoleApp1
             trucks = new List<Truck>();
         }
 
-        public string getAutoparkName()
+        public string Autopark_name
         {
-            return autopark_name;
+            get { return autopark_name; }
+            set { autopark_name = value; }
         }
 
-        public List<PassengerCar> GetListOfPassengerCars()
+        public List<PassengerCar> Passenger_cars
         {
-            return passenger_cars;
+            get { return passenger_cars; }
+            set { passenger_cars = value; }
         }
 
-        public List<Truck> GetListOfTrucks()
+        public List<Truck> Trucks
         {
-            return trucks;
-        }
-
-        public void SetAutoparkName(string autopark_name)
-        {
-            this.autopark_name = autopark_name;
-        }
-
-        public void SetListOfPassengerCars(List<PassengerCar> passenger_cars)
-        {
-            this.passenger_cars = passenger_cars;
-        }
-
-        public void SetListOfTrucks(List<Truck> trucks)
-        {
-            this.trucks = trucks;
+            get { return trucks; }
+            set { trucks = value; }
         }
 
         public override string ToString()
@@ -248,7 +202,6 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-
         }
     }
 }
