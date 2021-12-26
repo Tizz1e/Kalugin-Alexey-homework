@@ -1,0 +1,15 @@
+C:\Users\kalug\source\repos\homework2\homework2\obj\Debug\homework2.csproj.AssemblyReference.cache
+C:\Users\kalug\source\repos\homework2\homework2\obj\Debug\MainWindow.g.cs
+C:\Users\kalug\source\repos\homework2\homework2\obj\Debug\App.g.cs
+C:\Users\kalug\source\repos\homework2\homework2\obj\Debug\homework2_MarkupCompile.cache
+C:\Users\kalug\source\repos\homework2\homework2\obj\Debug\homework2_MarkupCompile.lref
+C:\Users\kalug\source\repos\homework2\homework2\bin\Debug\homework2.exe.config
+C:\Users\kalug\source\repos\homework2\homework2\bin\Debug\homework2.exe
+C:\Users\kalug\source\repos\homework2\homework2\bin\Debug\homework2.pdb
+C:\Users\kalug\source\repos\homework2\homework2\obj\Debug\MainWindow.baml
+C:\Users\kalug\source\repos\homework2\homework2\obj\Debug\homework2.g.resources
+C:\Users\kalug\source\repos\homework2\homework2\obj\Debug\homework2.Properties.Resources.resources
+C:\Users\kalug\source\repos\homework2\homework2\obj\Debug\homework2.csproj.GenerateResource.cache
+C:\Users\kalug\source\repos\homework2\homework2\obj\Debug\homework2.csproj.CoreCompileInputs.cache
+C:\Users\kalug\source\repos\homework2\homework2\obj\Debug\homework2.exe
+C:\Users\kalug\source\repos\homework2\homework2\obj\Debug\homework2.pdb
